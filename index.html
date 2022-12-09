@@ -46,10 +46,9 @@
           <img src="./assets/images/my-avatar.png" alt="Vito Atmo" width="80">
         </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Vito Atmo">Vito Atmo</h1>
-
-          <p class="title">Digital Marketer</p>
+        <div class="info-content"> 
+          <h1 class="name" id="name" title="Vito Atmo">Vito Atmo</h1>
+          <p class="title" id="title">Web 2 & Web 3 Enthusiast</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -94,20 +93,6 @@
 
           </li>
 
-          <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">March 25, 1998</time>
-            </div>
-
-          </li> -->
-
           <li class="contact-item">
 
             <div class="icon-box">
@@ -129,20 +114,20 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/vitoatmo/" target=”_blank” class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/vitoatmo/" target=”_blank” class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://www.instagram.com/vitoatmo/" target=”_blank” class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/vitoatmo/" target=”_blank” class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
@@ -181,10 +166,10 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certification</button>
+          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -234,9 +219,9 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <!-- <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40"> -->
-                <i class='bx bx-spreadsheet bx-lg' style='color:#ffe171'></i>
+                <!-- <img src="./assets/images/icon-design.svg" alt="design icon" width="40"> -->
+                <!-- <i class='bx bx-spreadsheet bx-lg' style='color:#ffe171'></i> -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAcVJREFUaEPtWu1VwkAQnE0hoh3YgbEC7UA6EGhAbACwA+xAKzB0gBVILOTWFwjkgyRvc8Ejnpvfd293bmY/2IXgyUee4IAC6RuTysifY4S/RiEC3IHo+izOM69h8E5Xi6jJfqO0OJ5MAX46C4Ajo/RMg9m0zpdaIDsm6KMfIFIvDN/WMVMPJB4vADz2CgjwQoP5qMqneiCbcQTCzeESYwWiRp2eHDRzWPaBLudhNyBo1ujJQQA4ilHGSoFkL+0pI2l9yWKIgpguZsu8xHbSMCyWncEqn5WcSEtihOOxHMQWbZF1iY39I8mzloURBZI+sxtGvidDGB4e9E9Yl4sVJ7WozRfQMh9nToC08c/2rAIppM5yi6KV3VZYjloUiX41/TpNv+VfjxWdqTLikhH7EJbflMRh515L7o79SQXyLwsiJ00j+CE3nPisbBoDtPhNQq/Om0aJfjX9uky//jCyHakG2bCMsKkePrRIv8ZEzocPLdyzPiphXQui9fNaXPwdRggRmNsNEyycL1whCsHI4tBq9uvNWsGXRU9CsRert71W0xXcPRjnWYYS1jD81mkZ2jVWXd7XPwy4fG2JLWVE8kouz3jDyA91f0ZR2WgBKwAAAABJRU5ErkJggg=="/>
               </div>
 
               <div class="service-content-box">
@@ -253,7 +238,8 @@
 
               <div class="service-icon-box">
                 <!-- <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40"> -->
-                <i class='bx bx-slideshow bx-lg' style='color:#ffe171' ></i>
+                <!-- <i class='bx bx-slideshow bx-lg' style='color:#ffe171' ></i> -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAl5JREFUaEPtmb9u01AUxr8vqVjpjlo7EhtI5A0oT1B4AvoEYO+xEBLdUH0pGxPd2IAXgLJ0DlJGpNQZO7WMtNyD3LRNHDuJ/6W+Cb5jcu6953e/z8nxucSKDK4IB2oQ05SsFVkaRaTvbKGBbZBtI5IW6ULjK1vqMCmfRGtJ4PgAHSMAYkmIoqXcyY9jIDJwnkL42UyIq6woz7ipvoznGAcJ3DBg22gQ4ICWvzMb5Ng9BPF4LOgA4HG1YGIDeH6Tg+AHbX8rG4iWJ9MesNuCG/7w8HsNcnkC/6siMnjxEH/unPD+25OyrFeJtSRwH0BwhKZ0uKHelwFTHQjQuwI4gohHW30rAmQCyHX+H3De9PLazSQQQPAbpEdrbz+rOmaBjLLPbDdTQUZ2W/u7y3v7g3kKGQzCHrT22IoWftOAzAQReLT9N/NUGP/eLBDiEwiPG/6vLBBhrCEg0oNGahslQVYPQna4ubebVYHJ+OpABB0089nIHEUEJCFFVaj8YS8T4HqtSqxVg8w4gXIUAbogThdx0qnXFKwDGDUKUzUfAlcBeJl6k2oC39HyIw3EeF+r79hosAvgbjU5zt31DFrabKlIiyq5ZTpsv3wEYM1d9nYDAmjZSWpPzbxWGD5kjdCboUdzDHkVncTXORYJp5xC6+6s/tpC70ckcCN/jLT8he23sIUvq9YaJLsBa0XSnNlSWUv6zjrW+CgRTCN6TdZA5CrgZs6F/GRLFaoeClsrVgelkWoypoRGeQ0y9V1hiRVpgwwLzfxDxGFLhfVd7lHYWrl3LnliDVLygRZebmUU+QfUI+VCAu3czwAAAABJRU5ErkJggg=="/>
               </div>
 
               <div class="service-content-box">
@@ -270,7 +256,8 @@
 
               <div class="service-icon-box">
                 <!-- <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40"> -->
-                <i class='bx bx-palette bx-lg' style='color:#ffe171'></i>
+                <!-- <i class='bx bx-palette bx-lg' style='color:#ffe171'></i> -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAABe5JREFUaEPtmU9oHFUcx7+/SfAmJh48FLuTRerRpBcJInYLivagxn948GB6sQfBzkQUKUJTRQRrM1PxYi9JwVMV21xERHRTEPHkehAEa3ZnUwQP0gRRKJr5ye/NZHf+vPm3u7Gh9B1n3rx5n/f7/3uEm2TQTcKBWyB7TZIjlQi3rRkYeFJBsjEDgydSwMxNELWwzWtUdzdHdSBDg3DbmoJBsvl5ADOVNkZogrECn1eHhRoYhNvWBAw4AAnAsGMTYBc+zg4KNBAIe/aLAFwAadUZDqkDYptq7qWqy1QCUVIgYxnEczk/8gA0AeoA2ITvt9RcwxC1mwBzA6RU8I7sNdgl07WrwJQGCVSJvsmwgy1A6foK1d1g4wWDu9YcWKll4BzSowWfD5dVtVIgBRCr8Hm+7A+T+1XOgmgFhEPDwJQD8ewfNJLYgs9zVHebRadf5j13F+bBLHaXVLkWmc7BojUKQdizZfHjiYUEoqFTI16374eBh0H8N+i2C1R777fot0q6Y8YL8HkShnGZamcu77wP4hDJwSRhzpLpWHkwuSDcthqhXfTXIPyIbaVKKVtgzxZgAd8Zf8LA47TfWZMHvL4wjTF8DvC+/hReJNM9VQhD/FSeN8sECe2inXCx2ZLw3pgErv8BpPK3b8l0HlQgnrUK0BOpkzW276X9H/xSANMh06lnSSUbRKtSZJO5FD3x3rq8YR+CL243NZhMxwhA7N8B3KWZ8hyZ7qcxFQxsZjk+l06RubSog9GCZEhjlUwnM35w97V7wP9e0fzkCpnOAQXSsb8DYTYtkbFZ2v/+98nn3LGbCW+2CZ/rOg+pB9GdRrCABLnMwZ79EYCXEhOOkemcUyBXrWexTZ8k3l8g03let2ho/OIx+4PoKNWWVpLz9SCeLbYx1dcbrNGU04iJXmzCuH4fePwq1U7/GtFvCwYdAeEv+PwxTbmfxb5r24/BwFEAdwL8NZnuuwWHI+lKNGhqNSMFEmazAhI5hbjHCL2TEzHsc2Q6x/I2NOi7ML7EbcXnyaR6pUGC1OFijMN0evNUnBhDSp/hs011V+sIBoXoSdmzObZGkLrEHEsaxFtYBPhkllpxxz4BwjuazX1JpvPosJvW2krK6NPeSwNiJ3UyFlXZsyyARK3ig3CRas7TuwKSDgUpO0mDFNBz9/V94H9+BnB7bNPMzyQNe1RQXKAl8p/KIPJRGPxEvR4AIB7r9I6LHdXmY54uGQ447UUHAtmNzea64L0MEnZcjgMk2UK0ZJZkVIq08+JiM2qhVDY8kESCLNZ/C6BZMNYxzmfo7niulHXCYdPiJEC5abkqkwktsCqL470BTXSv7n5VyWv8FE/FAfg4QnXni1wVyS+Xy2msxj70xp4OiJtkOpO94NRdeBnMH2r+mpkz9QObtTxk+0jKiBldzqdLUaTJcC220UhRwx37TRDe1oB8RabzSI5KpYs0YAvE8zsFU1jISUNC2k3Jkdsb0CeN6fS5F4C4++pDYF9VfPHBJ/ISQPZSgTa7SFPlMBqq7er7koq0ipobA6Xx7FlirNECp4Ra2SLliNFmF2nljCWZWGi+Cl2e1B79JgChSTXncE/fN145AN+YhjG+oSuKYgEt6A/HM+oS9U0VoJxSN5E8KtegL2qKfhgeTNzuNKl40Tp574uaDxKczMgCUmpKCl2qmxiTSjIVL+iKVIXKbwdpapOgn1sdhru2BLfpyAbPk+mMopOvlhy0QVcZhr0FC+BY+k+Rgq2qBJLzC0HkA81pyuNNENm6RoBuU1oH4vPBQdRUt345EOXXSW6XoqoRrCe3TtuqzC20m3R7Z3QuuBSIkkoejJpAl2DwCtWc1RyJxDuXIzT40iC9+KFvaiejUxNy6RmIbKcXJtlu9I5xi0xnZDdelUECm1GdFumYRF1zVXv9f71W3u7CWlpOOucaTbNC0NGXa4k9dT0t9x1zYHWvmHWN1qfZBYhScaSKviiHIHZgGA2AZ8CRJJGoKZnsqG64BoojVWBu1NyBjP1GbTbvv7dA9ppU/gP7otxRhioTvAAAAABJRU5ErkJggg=="/>
               </div>
 
             
@@ -278,7 +265,7 @@
                 <h4 class="h4 service-item-title">Campaign & Content Creation</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Professional development of Content Creation for iOS and Android.
                 </p>
               </div>
 
@@ -288,7 +275,8 @@
 
               <div class="service-icon-box">
                 <!-- <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40"> -->
-                <i class='bx bx-trending-up bx-lg' style='color:#ffe171'  ></i>
+                <!-- <i class='bx bx-trending-up bx-lg' style='color:#ffe171'  ></i> -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAcZJREFUaEPt1+F1gjAQAOALHaBOUHUDRmCDjlC6gTpIpRMUJ/F1grqBDyeoC5A+RJQ2hFyOHI2++Ds5891dLirgTj7iThwQIL5VMlQkVIQpA6G1mBJLDhsqQk5dx0a5X8QQwTM6pogK8fSWt9d7UxFZLKuDvaAwEj7FbJ14CakOhcb4DkFjbgGCwowBkfvFRMyzb1SvaxbVl198aWNwQyoERGILIHdimr1SMGfEFgAm/wK5IiCuDyBzWwwKcQrNNLVURJNLPKYHsTlHu45mDogegcf0IcR0nSoDwDXEjDBjMIhLlObRdAnpQRwB4FG9qGqb2SB+YSTMnLzsvYhSJvAQxSDlRx+GgrhgDqt08G8tE0LMs92ppw+rVIeBEt7rMa2M2E1zJ2xHt9WPRiyinbluTOcxyYgqGhpii7DEDEKgIVQEEjMYgYIMRRgwThBGiCuEBuMM0QtxjfiDSajTSTfNOi87F8J2pNqsVyC3iNC2Vsd/5yOUMmkeO5tMjbVW+460MN4jzFOrWGZQytznSjQVR7/sY7UI9XsChJo5rn2hIlyZpcYNFaFmjmtfqAhXZqlxQ0WomePaFyrClVlq3FARaua49v0A9wsnQlXDWwwAAAAASUVORK5CYII="/>
               </div>
 
               <div class="service-content-box">
@@ -360,10 +348,10 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-3.png" alt="Rafiandra Putra" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rafiandra Putra</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
@@ -382,18 +370,14 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-4.png" alt="Bernadus Alexander" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bernadus Alexander</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    Vito is a person who is able to learn something new, fast learning, and good adaptability skill. I am happy to work with Vito in a study group during the Full Stack Digital Marketing at RevoU in the period of May 2022 to August 2022. He is also actively communicating in every group meeting, both in the learning process and group discussion.
                   </p>
                 </div>
 
@@ -546,7 +530,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">NFT Illustrator</h4>
+              <h4 class="h4 timeline-item-title">NFT Creator</h4>
               <h5 class="h5 timeline-item-title">Wall of Wahini • Freelance</h5>
 
               <span>Nov 2021 — Present</span>
@@ -696,12 +680,12 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Performance Marketing</h5>
-                <data value="80">80%</data>
+                <!-- <data value="80">80%</data> -->
               </div>
 
-              <div class="skill-progress-bg">
+              <!-- <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+              </div> -->
 
             </li>
 
@@ -709,12 +693,12 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Google Data Studio</h5>
-                <data value="70">70%</data>
+                <!-- <data value="70">70%</data> -->
               </div>
 
-              <div class="skill-progress-bg">
+              <!-- <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+              </div> -->
 
             </li>
 
@@ -722,25 +706,25 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Google Suite</h5>
-                <data value="90">90%</data>
+                <!-- <data value="90">90%</data> -->
               </div>
 
-              <div class="skill-progress-bg">
+              <!-- <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+              </div> -->
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Leadership</h5>
-                <data value="50">50%</data>
+                <h5 class="h5">Social Media</h5>
+                <!-- <data value="50">50%</data> -->
               </div>
 
-              <div class="skill-progress-bg">
+              <!-- <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+              </div> -->
 
             </li>
 
@@ -773,15 +757,19 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Paid Media</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Content Creation</button>
             </li>
 
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>NFT</button>
             </li>
 
           </ul>
@@ -805,15 +793,19 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Paid Media</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Content Creation</button>
               </li>
 
               <li class="select-item">
                 <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>NFT</button>
               </li>
 
             </ul>
@@ -858,7 +850,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="paid media">
               <a href="#">
 
                 <figure class="project-img">
@@ -871,12 +863,12 @@
 
                 <h3 class="project-title">Fundo</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Paid Media</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="content creation">
               <a href="#">
 
                 <figure class="project-img">
@@ -889,12 +881,12 @@
 
                 <h3 class="project-title">Brawlhalla</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Content Creation</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="paid media">
               <a href="#">
 
                 <figure class="project-img">
@@ -907,12 +899,12 @@
 
                 <h3 class="project-title">DSM.</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Paid Media</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="paid media">
               <a href="#">
 
                 <figure class="project-img">
@@ -925,7 +917,7 @@
 
                 <h3 class="project-title">MetaSpark</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Paid Media</p>
 
               </a>
             </li>
@@ -948,7 +940,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="content creation">
               <a href="#">
 
                 <figure class="project-img">
@@ -961,7 +953,7 @@
 
                 <h3 class="project-title">Task Manager</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Content Creation</p>
 
               </a>
             </li>
@@ -984,6 +976,60 @@
               </a>
             </li>
 
+            <li class="project-item  active" data-filter-item data-category="nft">
+              <a href="https://objkt.com/collection/KT1EqLPJd79Atn2ELr6MB3uTqXdyhpUmp3jy" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GoodMayo.gif" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">OBJKT: Good Mayo</h3>
+
+                <p class="project-category">Collection of 366 cute Samoyed Dog with any costume.</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="nft">
+              <a href="https://butiq.art/wahini" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GoodMayo.gif" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Butiq: wahini</h3>
+
+                <p class="project-category">An individual Website for my NFTs on Tezos</p>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="project-item  active" data-filter-item data-category="nft">
+              <a href="https://discord.com/invite/JmKp8kuKKD" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GoodMayo.gif" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Discord: Good Mayo</h3>
+
+                <p class="project-category">Good Mayo Community Server</p>
+
+              </a>
+            </li> -->
+
           </ul>
 
         </section>
@@ -998,10 +1044,10 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="certification">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Certification</h2>
         </header>
 
         <section class="blog-posts">
@@ -1009,26 +1055,26 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://certificates.revou.co/bhadrika-evandito-atmomintarso-certificate-completion-fsdm21.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/bhadrika-evandito-atmomintarso-certificate-completion-fsdm21.png" alt="RevoU Fullstack Digital Marketing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">RevoU</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-08-20">Aug 20, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Fullstack Digital Marketing</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Completed 200 hours of live classes from the best SEA Digital Marketers with an acceptance rate of less than 5% in 13 weeks
                   </p>
 
                 </div>
@@ -1037,26 +1083,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://app.hubspot.com/academy/achievements/b17t1lcg/en/1/bhadrika-evandito-atmomintarso/social-media-marketing" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/bhadrika-evandito-atmomintarso-social-media-marketing.png" alt="HubSpot Social Media Marketing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">HubSpot</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-08-20">Aug 14, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Social Media Marketing</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Building an effective social media strategy will expand all of your other inbound marketing efforts as well as build brand awareness, drive word of mouth, and attract buyers.
                   </p>
 
                 </div>
@@ -1065,26 +1111,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://app.hubspot.com/academy/achievements/8hymm39b/en/1/bhadrika-evandito/content-marketing" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/bhadrika-evandito-content-marketing.png" alt="HubSpot Content Marketing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">HubSpot</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-08-10">Aug 10, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">HubSpot Content Marketing</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Completed 141 hours of e-learning classes, learnt a content creation framework for producing effective content, create and repurpose content that both humans and search engines will love.
                   </p>
 
                 </div>
@@ -1093,26 +1139,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://certificates.revou.co/bhadrika-evandito-certificate-completion-dmmc21.pdf" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images/bhadrika-evandito-certificate-completion-dmmc21.png" alt="RevoU Mini Course Digital Marketing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">RevoU</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="202-12-10">Dec 10, 2021</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Mini Course Digital Marketing</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    Completed one week introducing into Digital Marketing.
                   </p>
 
                 </div>
@@ -1121,6 +1167,62 @@
             </li>
 
             <li class="blog-post-item">
+              <a href="https://drive.google.com/file/d/1vvKQzqiSmjgh2aUrAfWEe6yofVjX_3Fp/view?usp=sharing" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Bangkit Certificate - Machine Learning - Bhadrika Evandito Atmomintarso.png" alt="Bangkit Machine Learning" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Bangkit</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-07-21">Jul 21, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Machine Learning</h3>
+
+                  <p class="blog-text">
+                    Part of the Kampus Merdeka program supported by the Ministry of Education and Culture of Republic Indonesia. Committed over five months of active participations, learned the key concepts and applications of AI to solve a wide range of ML problems.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://drive.google.com/file/d/1tTsWKGQuGixdoiPRUI1XDWKHtavuWejy/view?usp=sharing" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/PMMB-Bhadrika Evandito Atmomintarso-1.png" alt="Program Magang Mahasiswa Bersertifikat" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">FHCI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-06-13">Jun 13, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Program Magang Mahasiswa Bersertifikat</h3>
+
+                  <p class="blog-text">
+                    Part of the program by the Ministry of Education and Culture of Republic Indonesia supported by Forum Human Capital Indonesia. Six months paid internship as Network Operation Center in PT. Indonesia Comnets Plus.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!-- <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1146,9 +1248,9 @@
                 </div>
 
               </a>
-            </li>
+            </li> -->
 
-            <li class="blog-post-item">
+            <!-- <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1174,7 +1276,7 @@
                 </div>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 

@@ -157,6 +157,9 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
+body.light { background: var(--light-gray); }
+
+
 
 
 
@@ -1786,6 +1789,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
+  body.dark {
+    background-color: #292C35;
+    color: #fff;
+  }
 
 
   /**
